@@ -22,10 +22,10 @@ License: Same terms as Vim itself (see |license|)
     окно |Quickfix|. Если модификатор [!] не задан, то происходит перемещение
     к первому вхождению шаблона.
 
-:AckAdd [options] {pattern} [{directory}]                            *:AckAdd*
+:AckAdd [опции] {шаблон} [{директория}]                            *:AckAdd*
 
-    Just like |:Ack|, but instead of making a new list, the matches are
-    appended to the current |quickfix| list.
+    То же, что и |:Ack|, но вместо создания нового списка, происходит
+    дополнение обрануженных соответствий к существующему списку |quickfix|.
 
 :AckFromSearch [{directory}]                                  *:AckFromSearch*
 
