@@ -11,16 +11,16 @@ License: Same terms as Vim itself (see |license|)
 ==============================================================================
 Введение                                                                 *ack*
 
-This plugin is a front for the Perl module App::Ack.  Ack can be used as a
-replacement for grep.  This plugin will allow you to run ack from vim, and
-shows the results in a split window.
+Плагин является фронендом для Perl-модуля App::Ack. Ack может быть использован
+для замены grep. Плагин позволяет запустить ack из vim, и отобразить результат
+в разделённом окне.
 
-:Ack[!] [options] {pattern} [{directory}]                               *:Ack*
+:Ack[!] [опции] {шаблон} [{директория}]                                 *:Ack*
 
-    Search recursively in {directory} (which defaults to the current
-    directory) for the {pattern}.  Behaves just like the |:grep| command, but
-    will open the |Quickfix| window for you. If [!] is not given the first
-    occurrence is jumped to.
+    Ищет рекурсивно в {директории} (по-умолчанию - текущая директория)
+    по {шаблону}. Работает так же, как и команда |:grep|, но открывает
+    окно |Quickfix|. Если модификатор [!] не задан, то происходит перемещение
+    к первому вхождению шаблона.
 
 :AckAdd [options] {pattern} [{directory}]                            *:AckAdd*
 
