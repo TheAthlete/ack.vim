@@ -31,10 +31,10 @@ License: Same terms as Vim itself (see |license|)
 
     То же, что и |:Ack|, но используется шаблон из предыдушего поиска.
 
-:LAck [options] {pattern} [{directory}]                                *:LAck*
+:LAck [опции] {шаблон} [{директория}]                                *:LAck*
 
-    Just like |:Ack| but instead of the |quickfix| list, matches are placed in
-    the current |location-list|.
+    То же, что и |:Ack|, но вместо списка результатов |quickfix|, обнаруженные
+    соответствия помещаются в текущий список адресов |location-list|.
 
 :LAckAdd [options] {pattern} [{directory}]                          *:LAckAdd*
 
