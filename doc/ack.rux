@@ -65,10 +65,11 @@ License: Same terms as Vim itself (see |license|)
     Ищет во всех буферах, видимых на экране (только для текущей вкладки)
     по {шаблону}.
 
-:LAckWindow [options] {pattern}                                   *:LAckWindow*
+:LAckWindow [опции] {шаблон}                                   *:LAckWindow*
 
-    Just like |:AckWindow| but instead of the |quickfix| list, matches are
-    placed in the current |location-list|.
+    То же, что и |:AckWindow|, но вместо списка быстрых исправлений |quickfix|,
+    происходит дополнение обнаруженных соответствий к существующему списку
+    расположений |location-list|.
 
 Files containing the search term will be listed in the split window, along
 with the line number of the occurrence, once for each occurrence.  <Enter> on
