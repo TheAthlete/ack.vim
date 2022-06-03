@@ -60,10 +60,10 @@ License: Same terms as Vim itself (see |license|)
     происходит дополнение обнаруженных соответствий к существующему списку
     расположений |location-list|.
 
-:AckWindow[!] [options] {pattern}                                 *:AckWindow*
+:AckWindow[!] [опции] {шаблон}                                 *:AckWindow*
 
-    Search all buffers visible in the screen (current tab page only) files for
-    the {pattern}.
+    Ищет во всех буферах, видимых на экране (только для текущей вкладки)
+    по {шаблону}.
 
 :LAckWindow [options] {pattern}                                   *:LAckWindow*
 
