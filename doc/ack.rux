@@ -43,11 +43,11 @@ License: Same terms as Vim itself (see |license|)
     происходит дополнение обнаруженных соответствий к существующему списку
     расположений |location-list|.
 
-:AckFile [options] {pattern} [{directory}]                          *:AckFile*
+:AckFile [опции] {шаблон} [{директория}]                          *:AckFile*
 
-    Search recursively in {directory} (which defaults to the current
-    directory) for filenames matching the {pattern}.  Behaves just like the
-    |:grep| command, but will open the |Quickfix| window for you.
+    Ищет рекурсивно в {директории} (по умолчанию - текущая директория)
+    по именам файлов соответствующих {шаблону}. Работает так же, как и
+    команда |:grep|, но открывает окно |Quickfix|.
 
 :AckHelp[!] [options] {pattern}                                      *:AckHelp*
 
