@@ -39,8 +39,9 @@ License: Same terms as Vim itself (see |license|)
 
 :LAckAdd [options] {pattern} [{directory}]                          *:LAckAdd*
 
-    Just like |:AckAdd| but instead of the |quickfix| list, matches are added
-    to the current |location-list|
+    То же, что и |:AckAdd|, но вместо списка быстрых исправлений |quickfix|,
+    происходит дополнение обнаруженных соответствий к существующему списку
+    расположений |location-list|.
 
 :AckFile [options] {pattern} [{directory}]                          *:AckFile*
 
