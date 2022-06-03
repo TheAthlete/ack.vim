@@ -37,7 +37,7 @@ License: Same terms as Vim itself (see |license|)
     обнаруженные соответствия помещаются в текущий список
     расположений |location-list|.
 
-:LAckAdd [options] {pattern} [{directory}]                          *:LAckAdd*
+:LAckAdd [опции] {шаблон} [{директория}]                          *:LAckAdd*
 
     То же, что и |:AckAdd|, но вместо списка быстрых исправлений |quickfix|,
     происходит дополнение обнаруженных соответствий к существующему списку
