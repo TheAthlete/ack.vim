@@ -49,10 +49,10 @@ License: Same terms as Vim itself (see |license|)
     по именам файлов соответствующих {шаблону}. Работает так же, как и
     команда |:grep|, но открывает окно |Quickfix|.
 
-:AckHelp[!] [options] {pattern}                                      *:AckHelp*
+:AckHelp[!] [опции] {шаблон}                                      *:AckHelp*
 
-    Search vim documentation files for the {pattern}.  Behaves just like the
-    |:Ack| command, but searches only vim documentation .txt files
+    Ищет в файлах документации vim по {шаблону}. Работает так же, как и
+    команда |:Ack|, но ищет только файлы .txt документации vim.
 
 :LAckHelp [options] {pattern}                                        *:LAckHelp*
 
