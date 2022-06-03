@@ -54,10 +54,11 @@ License: Same terms as Vim itself (see |license|)
     Ищет в файлах документации vim по {шаблону}. Работает так же, как и
     команда |:Ack|, но ищет только файлы .txt документации vim.
 
-:LAckHelp [options] {pattern}                                        *:LAckHelp*
+:LAckHelp [опции] {шаблон}                                        *:LAckHelp*
 
-    Just like |:AckHelp| but instead of the |quickfix| list, matches are placed
-    in the current |location-list|.
+    То же, что и |:AckHelp|, но вместо списка быстрых исправлений |quickfix|,
+    происходит дополнение обнаруженных соответствий к существующему списку
+    расположений |location-list|.
 
 :AckWindow[!] [options] {pattern}                                 *:AckWindow*
 
