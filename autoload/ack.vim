@@ -170,7 +170,15 @@ function! s:Init(cmd) "{{{
 endfunction "}}}
 
 function! s:QuickHelp() "{{{
-  execute 'edit' globpath(&rtp, 'doc/ack_quick_help.txt')
+  let quick_h = globpath(&rtp, 'doc/ack_quick_help.txt')
+  for hlang in split(&helplang, ',')
+    let quick_h = globpath(&rtp, printf('doc/ack_quick_help.%sx', hlang))
+    if filereadable(quick_h)
+      break
+    endif
+  endfor
+
+  execute 'edit' quick_h
 
   silent normal gg
   setlocal buftype=nofile bufhidden=hide nobuflisted
