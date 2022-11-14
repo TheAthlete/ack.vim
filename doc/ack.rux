@@ -71,10 +71,10 @@ License: Same terms as Vim itself (see |license|)
     происходит дополнение обнаруженных соответствий к существующему списку
     расположений |location-list|.
 
-Files containing the search term will be listed in the split window, along
-with the line number of the occurrence, once for each occurrence.  <Enter> on
-a line in this window will open the file, and place the cursor on the matching
-line.
+Файлы, содержащие строки, соответствующие заданному шаблону, будут выведены в
+разделлённом окне вместе с номером строки соответствия, один раз для каждого
+соответствия. Нажатие клавиши <Enter> на строке в этом окне открывает файл и
+помещает курсор на соответствующую строку.
 
 Note that if you are using Dispatch.vim with |g:ack_use_dispatch|, location
 lists are not supported, because Dispatch does not support them at this time.
