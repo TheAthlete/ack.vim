@@ -76,25 +76,28 @@ License: Same terms as Vim itself (see |license|)
 соответствия. Нажатие клавиши <Enter> на строке в этом окне открывает файл и
 помещает курсор на соответствующую строку.
 
-Note that if you are using Dispatch.vim with |g:ack_use_dispatch|, location
-lists are not supported, because Dispatch does not support them at this time.
-`:LAck` versions of commands above will give a warning and proceed to use the
-quickfix list instead.
+Обратите внимание, что плагин Dispatch.vim (подключается с помощью опции
+|g:ack_use_dispatch|) на данный момент не поддерживает списки расположений
+|location-list|.  Версии команд с префиксом `:LAck`, приведенные выше, будут
+выдавать предупреждение, и вместо этого вы перейдете на использование списка
+быстрых исправленй |quickfix|.
 
-See http://beyondgrep.com/ for more information on searching with ack.
+Более подробная информация по поиску с помощью ack размещена на сайте
+https://beyondgrep.com/.
 
 
 ==============================================================================
-CONFIGURATION                                              *ack-configuration*
+КОНФИГУРАЦИЯ                                               *ack-configuration*
 
                                                                     *g:ackprg*
 g:ackprg
-Default for ubuntu: "ack-grep"
-Default for other systems: "ack"
+Значение по-умолчанию для ubuntu: "ack-grep"
+Значение по-умолчанию для других ОС: "ack"
 
-Use this option to specify the search command and its default arguments.
+Используйте данную опцию для указания команды поиска и её аргументов
+по-умолчанию.
 
-Example:
+Пример:
 >
         let g:ackprg = "ag --vimgrep"
 <
