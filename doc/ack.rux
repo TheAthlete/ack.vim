@@ -103,31 +103,31 @@ g:ackprg
 <
                                                        *g:ack_default_options*
 g:ack_default_options
-Default: " -s -H --nocolor --nogroup --column"
+Значение по-умолчанию: " -s -H --nocolor --nogroup --column"
 
-Use this option to specify the default arguments given to `ack`. This is only
-used if |g:ackprg| has not been customized from the default--if you are using
-a custom search program instead of Ack, set your preferred options in
-|g:ackprg|.
+Используйте данную опцию для указания аргументов по-умолчанию, заданных для
+команды поиска `ack`. Эта опция не будет использоваться, если опция |g:ackprg|
+была изменена. Если вы используете команду поиска, отличную от Ack, то укажите
+ваши предпочитаемые параметры в |g:ackprg|.
 
-NOTE: This option may be deprecated in the future. ~
+ЗАМЕЧАНИЕ: Эта опция может быть признана устаревшей в будущем. ~
 
-Example:
+Пример:
 >
         let g:ack_default_options =
               \ " -s -H --nocolor --nogroup --column --smart-case --follow"
 <
                                                        *g:ack_apply_qmappings*
 g:ack_apply_qmappings
-Default: 1
+Значение по-умолчанию: 1
 
-This option enables mappings on the |quickfix| window.
+Данная опция включает привязки в окне |quickfix|.
 
                                                        *g:ack_apply_lmappings*
 g:ack_apply_lmappings
-Default: 1
+Значение по-умолчанию: 1
 
-This option enables mappings on |location-list| windows.
+Данная опция включает привязки в окнах |location-list|.
 
                                                               *g:ack_mappings*
 g:ack_mappings
