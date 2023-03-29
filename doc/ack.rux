@@ -151,42 +151,42 @@ g:ack_mappings
 <
                                                               *g:ack_qhandler*
 g:ack_qhandler
-Default: "botright copen"
+Значение по умолчанию: "botright copen"
 
-Command to open the quickview window.
+Команда для открытия окна |quickfix|.
 
-If you want to open a quickview window with 30 lines you can do:
+Например, если вы хотите открыть окно |quickfix| размером в 30 строк:
 >
         let g:ack_qhandler = "botright copen 30"
 <
                                                               *g:ack_lhandler*
 g:ack_lhandler
-Default: "botright lopen"
+Значение по умолчанию: "botright lopen"
 
-Command to open the Location list window.
+Команда для открытия окна |location-list|.
 
-If you want to open a Location list window with 30 lines you can do:
+Например, если вы хотите открыть окно |location-list| размером в 30 строк:
 >
         let g:ack_lhandler = "botright lopen 30"
 <
                                                               *g:ackhighlight*
 g:ackhighlight
-Default: 0
+Значение по-умолчанию: 0
 
-Use this option to highlight the searched term.
+Используйте данную опцию для выделения шаблона поиска.
 
-Example:
+Пример:
 >
         let g:ackhighlight = 1
 <
                                                              *g:ack_autoclose*
 g:ack_autoclose
-Default: 0
+Значение по умолчанию: 0
 
-Use this option to specify whether to close the quickfix window after
-using any of the shortcuts.
+Используйте данную опцию для указания закрывать окно |quickfix| после
+использования любой команды привязки.
 
-Example:
+Пример:
 >
         let g:ack_autoclose = 1
 <
