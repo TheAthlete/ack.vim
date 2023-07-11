@@ -153,7 +153,8 @@ g:ack_mappings
 g:ack_qhandler
 Значение по умолчанию: "botright copen"
 
-Команда для открытия окна |quickfix|.
+Команда для открытия окна |quickfix| с возможностью указать расположение и
+размер окна.
 
 Например, если вы хотите открыть окно |quickfix| размером в 30 строк:
 >
@@ -163,7 +164,8 @@ g:ack_qhandler
 g:ack_lhandler
 Значение по умолчанию: "botright lopen"
 
-Команда для открытия окна |location-list|.
+Команда для открытия окна |location-list| с возможностью указать расположение и
+размер окна.
 
 Например, если вы хотите открыть окно |location-list| размером в 30 строк:
 >
@@ -192,30 +194,30 @@ g:ack_autoclose
 <
                                                       *g:ack_autofold_results*
 g:ack_autofold_results
-Default: 0
+Значение по умолчанию: 0
 
-Use this option to fold the results in quickfix by file name. Only the current
-fold will be open by default and while you press 'j' and 'k' to move between the
-results if you hit other fold the last one will be closed and the current will
-be open.
+Используйте данную опцию для создания областей складок в окне |quickfix| по
+имени файла. По умолчанию будет открыта текущая складка, и, когда при перемещении
+между результатми с помощью клавиш 'j' и 'k' курсор будет под следующей
+складкой, придыдущая будет скрыта, а текущая открыта.
 
-Example:
+Пример:
 >
         let g:ack_autofold_results = 1
 <
                                                                 *g:ackpreview*
 g:ackpreview
-Default: 0
+Значение по умолчанию: 0
 
-Use this option to automagically open the file with 'j' or 'k'.
+Используйте данную опцию для автоматического открытия файла по 'j' или 'k'.
 
-Example:
+Пример:
 >
         let g:ackpreview = 1
 <
                                                           *g:ack_use_dispatch*
 g:ack_use_dispatch
-Default: 0
+Значение по умолчанию: 0
 
 Use this option to use vim-dispatch to run searches in the background, with a
 variety of execution backends for different systems.
