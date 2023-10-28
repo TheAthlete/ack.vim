@@ -244,34 +244,33 @@ g:ack_use_cword_for_empty_search
         let g:ack_use_cword_for_empty_search = 0
 <
 ==============================================================================
-MAPPINGS                                                        *ack-mappings*
+ПРИВЯЗКИ                                                        *ack-mappings*
 
-The following keyboard shortcuts are available in the |quickfix| and
-|location-list| windows:
+Следующие сочетания клавиш доступны в окнах |quickfix| и |location-list|:
 
-?                   display a quick summary of these mappings.
+?                   вывод краткой справки по данным привязкам.
 
-o                   open file (same as Enter).
+o                   открыть файл (то же, что и Enter).
 
-O                   open file and close the quickfix window.
+O                   открыть файл и закрыть окно быстрых исправлений |quickfix|.
 
-go                  preview file (open but maintain focus on ack.vim results).
+go                  предпросмотр файла (открыть, но оставить фокус на окне быстрых исправлений |quickfix|).
 
-t                   open in a new tab.
+t                   открыть в новой вкладке.
 
-T                   open in new tab without moving to it.
+T                   открыть в новой вкладке без перехода в неё.
 
-h                   open in horizontal split.
+h                   открыть в горизонтально разделённом окне.
 
-H                   open in horizontal split, keeping focus on the results.
+H                   открыть в горизонтально разделённом окне, но оставить фокус на окне быстрых исправлений |quickfix|.
 
-v                   open in vertical split.
+v                   открыть в вертикально разделённом окне.
 
-gv                  open in vertical split, keeping focus on the results.
+gv                  открыть в вертикально разделённом окне, но оставить фокус на окне быстрых исправлений |quickfix|.
 
-q                   close the quickfix window.
+q                   закрыть список быстрых исправлений |quickfix|.
 
-To adjust these, see |g:ack_mappings|.
+Для настройки и переопределения данных привязок, смотрите |g:ack_mappings|.
 
 ==============================================================================
 Ignoring files                                                    *ack-ignore*
